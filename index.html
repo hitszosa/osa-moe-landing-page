@@ -11,7 +11,7 @@
 
 <body
   style="font-family: Ubuntu, 'Noto Sans SC', Arial, Helvetica, sans-serif; background-color:white; max-width: 680px; height: 100%; margin: auto; padding-left: 3em; padding-right: 3em; padding-bottom: 3em; padding-top: 3em;">
-  <a href="https://www.lug.pub/">
+  <a class="logo-wrapper" href="https://www.lug.pub/">
     <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 512 512">
       <defs>
@@ -118,6 +118,12 @@
     margin-right: 1.5em;
   }
 
+  .logo-wrapper {
+    display: block;
+    margin: auto;
+    max-width: 18em;
+  }
+
   .copyright {
     margin-top: 6em;
     text-align: center;
@@ -155,10 +161,9 @@
   }
 
   .logo {
-    transition: transform .3s, filter .3s;
     max-height: 18em;
+    transition: transform .3s, filter .3s;
     display: block;
-    margin: auto;
     filter: drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.1));
   }
 
