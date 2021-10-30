@@ -83,12 +83,10 @@
   <h1 class="heading">
     Welcome to the pub!
   </h1>
+  <h2 class="section-heading">
+    公共访问资源
+  </h2>
   <div class="container">
-    <a class="link" href="https://i.lug.pub">
-      <div class="link-box">
-        <span>内网资源列表 𝛼</span>
-      </div>
-    </a>
     <a class="link" href="https://wiki.lug.pub">
       <div class="link-box">
         <span>LUG Wiki 𝛼</span>
@@ -102,6 +100,27 @@
     <a class="link" href="https://c-box.lug.pub">
       <div class="link-box">
         <span>【夹带私货】C-Box</span>
+      </div>
+    </a>
+  </div>
+  <hr class="divider-dotted">
+  <h2 class="section-heading">
+    内网访问资源
+  </h2>
+  <div class="container">
+    <a class="link" href="http://10.249.12.98:8000/">
+      <div class="link-box">
+        <span>HITSZ Grader</span>
+      </div>
+    </a>
+    <a class="link" href="http://10.248.98.2/">
+      <div class="link-box">
+        <span>上网认证</span>
+      </div>
+    </a>
+    <a class="link" href="http://10.249.12.85/">
+      <div class="link-box">
+        <span>LUG 镜像站</span>
       </div>
     </a>
   </div>
@@ -125,7 +144,7 @@
   }
 
   .copyright {
-    margin-top: 6em;
+    margin-top: 8em;
     text-align: center;
     font-size: 12px;
     color: #aaa;
@@ -140,8 +159,8 @@
   }
 
   .heading {
-    transition: filter .3s, color .3s;
-    margin: 1.2em auto 1.8em auto;
+    transition: filter .3s;
+    margin: 1.2em auto 2em auto;
     text-align: center;
     font-size: 36px;
     color: #7171f4;
@@ -149,8 +168,21 @@
   }
 
   .heading:hover {
-    color: #ff69c3;
-    filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.1)) hue-rotate(80deg);
+  }
+
+  .section-heading {
+    transition: color 10s, filter 10s;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.6em;
+    color: #c7bea2;
+    font-size: 20px;
+  }
+
+  .section-heading:hover {
+    color: #ffffff;
+    filter: blur(2px);
   }
 
   .container {
@@ -174,8 +206,8 @@
 
   .link-box {
     white-space: nowrap;
-    transition: box-shadow .3s, transform .3s, color .3s;
-    color: #480032a8;
+    transition: box-shadow .3s, transform .3s, color .3s, filter .3s;
+    color: #680b4c;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -187,9 +219,24 @@
   }
 
   .link-box:hover {
-    transform: translateY(-3px);
-    color: #503709a8;
+    transform: translateY(-3px) scale(1.003);
+    color: #7a5e00a8;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 8px -1px, rgba(0, 0, 0, 0.08) 0px 4px 6px -1px;
+  }
+
+  .divider-dotted {
+    transition: border-top .3s;
+    border-top: 2px dotted #fff0ce;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 80%;
+    margin-top: 2.8em;
+    margin-bottom: 3.8em;
+  }
+
+  .divider-dotted:hover {
+    border-top: 2px dotted #fff2a9;
   }
 </style>
 
