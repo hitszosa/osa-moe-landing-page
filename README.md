@@ -1,4 +1,4 @@
-# LUG PUB - Landing Page
+# LUG Pub - Landing Page
 
 ## Development Guide
 
