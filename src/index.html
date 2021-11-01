@@ -7,7 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="IE=edge">
 
   <link rel="preconnect" href="https://fonts.gstatic.com/" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400&family=Ubuntu:wght@400;500&display=swap"
+    rel="stylesheet" />
 
   <title>HITSZ LUG Pub - Landing Page</title>
 </head>
@@ -48,7 +49,7 @@
   }
 
   .heading {
-    transition: filter .3s, color .3s;
+    transition: all .3s ease-in-out;
     margin: 1.2em auto 2em auto;
     font-size: 34px;
     color: #7171f4;
@@ -57,11 +58,12 @@
 
   .heading:hover {
     color: #f15498;
+    transform: translateY(3px);
     filter: drop-shadow(0px 12px 8px rgba(0, 0, 0, 0.1));
   }
 
   .section-heading {
-    transition: color 10s, filter 10s;
+    transition: color 10s ease-in-out;
     margin: 2em auto 1.6em auto;
     color: #c2b58f;
     font-size: 20px;
@@ -69,8 +71,7 @@
   }
 
   .section-heading:hover {
-    color: #ffffff;
-    filter: blur(2px);
+    color: transparent;
   }
 
   .container {
@@ -82,7 +83,7 @@
 
   .logo {
     max-height: 16em;
-    transition: transform .3s, filter .3s;
+    transition: all .3s ease-in-out;
     display: block;
     filter: drop-shadow(0px 20px 12px rgba(0, 0, 0, 0.1));
   }
@@ -94,7 +95,7 @@
 
   .link-box {
     white-space: nowrap;
-    transition: box-shadow .3s, transform .3s, color .3s, filter .3s;
+    transition: all .3s ease-in-out;
     color: #680b4c;
     background-color: #ffffff;
     border-radius: 20px;
@@ -108,8 +109,8 @@
   }
 
   .link-box:hover {
-    transform: translateY(-3px) scale(1.003);
-    color: #7a5e00a8;
+    transform: translateY(-3px) scale(1.01);
+    color: #ff0457a8;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 8px -1px, rgba(0, 0, 0, 0.08) 0px 4px 6px -1px;
   }
 
@@ -255,6 +256,11 @@
         内网访问资源
       </h2>
       <div class="container">
+        <a class="link" href="http://10.249.12.85/">
+          <div class="link-box">
+            <span>LUG 镜像站</span>
+          </div>
+        </a>
         <a class="link" href="http://10.249.12.98:8000/">
           <div class="link-box">
             <span>HITSZ Grader</span>
@@ -263,11 +269,6 @@
         <a class="link" href="http://10.248.98.2/">
           <div class="link-box">
             <span>上网认证</span>
-          </div>
-        </a>
-        <a class="link" href="http://10.249.12.85/">
-          <div class="link-box">
-            <span>LUG 镜像站</span>
           </div>
         </a>
       </div>
