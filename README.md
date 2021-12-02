@@ -32,5 +32,5 @@ Use command `yarn build` to build. The built product is in directory `dist`.
 - `src/`: Most of the source code.
 - `static/`: Most of the static website files.
 - `dist/`: Locally built product.
+- `.parcel_cache/`: Cache files for Parcel. If something goes wrong, you might need to delete the directory and try again.
 - `.parcelrc`: Parcel configuration file.
-- `.parcel_cache`: Cache files for Parcel. If something goes wrong, you might need to delete the directory and try again.
