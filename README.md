@@ -6,7 +6,7 @@
 
 ## Development Guide
 
-### Prerequisite
+### Prerequisites
 
 - Node.js
 - Yarn Package Manager
@@ -16,7 +16,7 @@
 1. Use command `yarn` to install all required Node modules.
 2. You're up!
 
-*Recommand IDE: Web Storm*
+*Recommand IDE: WebStorm*
 
 #### Deploy
 
