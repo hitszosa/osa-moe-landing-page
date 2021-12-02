@@ -1,0 +1,45 @@
+doctype html
+html(lang='zh')
+    include includes/head.pug
+    include includes/style.pug
+    include includes/widgets.pug
+    body(style="font-family: Ubuntu, 'Noto Sans SC', Arial, Helvetica, sans-serif; background-color:white; margin: 0;")
+        .body-wrapper
+            .content
+                a.logo-wrapper(href='https://www.lug.pub/')
+                    img.logo(src='assets/images/lug-pub-logo.svg')
+                h1.heading
+                    | Welcome to the pub!
+                h2.section-heading
+                    | 公共访问资源
+                .container
+                    +link-button('LUG Wiki 𝛼', 'https://wiki.lug.pub')
+                    +link-button('Verilog OJ', 'https://wiki.lug.pub')
+                    +link-button('LUG GitHub', 'https://github.com/hitszlug')
+                hr.divider-dotted
+                h2.section-heading
+                    | 内网访问资源
+                .container
+                    +link-button('LUG 镜像站', 'http://10.249.12.85/')
+                    +link-button('HITSZ Grader', 'http://10.249.12.98:8000/')
+                    +link-button('HITSZ 上网认证', 'http://10.248.98.2/')
+                footer
+                    p.copyright HITSZ Linux User Group © 2021
+    //      #background
+    //
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+      <script>
+      VANTA.TOPOLOGY({
+      el: "#background",
+      mouseControls: true,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xecedfc,
+      backgroundColor: 0xffffff
+      })
+      </script>
