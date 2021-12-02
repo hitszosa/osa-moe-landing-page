@@ -18,12 +18,12 @@
 
 *Recommand IDE: WebStorm*
 
-#### Deploy
+### Deploy
 
 You can either use the already existed `Run Configuration` in WebStorm, or use command `yarn start`.
 Everything in the `main` branch will be built and deployed to production environment by Netlify bot, and every PR will trigger the bot to build a preview website.
 
-#### Build
+### Build
 
 Use command `yarn build` to build. The built product is in directory `dist`.
 
