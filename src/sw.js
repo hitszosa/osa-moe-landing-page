@@ -1,12 +1,12 @@
 import { manifest, version } from '@parcel/service-worker'
 
-async function install() {
+const install = async () => {
   const cache = await caches.open(version)
   await cache.addAll(manifest)
 }
 addEventListener('install', e => e.waitUntil(install()))
 
-async function activate() {
+const activate = async () => {
   const keys = await caches.keys()
   await Promise.all(
     keys.map(key => key !== version && caches.delete(key))
@@ -14,14 +14,14 @@ async function activate() {
 }
 addEventListener('activate', e => e.waitUntil(activate()))
 
-async function fakeFetch(event) {
+const fakeFetch = async (e) => {
   try {
-    let res = await fetch(event.request)
+    let res = await fetch(e.request)
     let cache = await caches.open('cache')
-    cache.put(event.request.url, res.clone())
+    cache.put(e.request.url, res.clone())
     return res
   } catch (error) {
-    return caches.match(event.request)
+    return caches.match(e.request)
   }
 }
 addEventListener('fetch', fakeFetch)
