@@ -7,7 +7,7 @@ html(lang='zh')
         .body-wrapper
             .content
                 a.logo-wrapper(href='https://www.lug.pub/')
-                    img.logo#logo(src='assets/images/lug-pub-logo.svg')
+                    img#logo(src='assets/images/lug-pub-logo.svg')
                 h1.heading
                     | Welcome to the pub!
                 h2.section-heading
@@ -16,7 +16,6 @@ html(lang='zh')
                     +link-button('LUG Wiki', 'https://wiki.lug.pub')
                     +link-button('Weekly', 'https://w.lug.pub')
                     +link-button('Verilog OJ', 'https://voj.hitsz.org')
-                    +link-button('LUG GitHub', 'https://github.com/hitszlug')
                 hr.divider-dotted
                 h2.section-heading
                     | 内网访问资源
@@ -31,7 +30,15 @@ html(lang='zh')
                     +link-button('上网认证', 'http://10.248.98.2/')
                     +link-button('课程录播平台', 'http://219.223.238.14:88/ve/')
                 footer
-                    p.copyright HITSZ Linux User Group © 2022
+                    p HITSZ Linux User Group © 2022
+                    p 
+                        a(href='https://github.com/hitszlug') GitHub
+                        span ·
+                        a(href='https://t.me/hitszlug') Telegram Group
+                        span ·
+                        a(href='https://qm.qq.com/cgi-bin/qm/qr?k=EmOyWeZrOaOeSoVrVLoozyKYdvjOia_t') QQ Group
+                        span ·
+                        a(href='https://space.bilibili.com/1124374292') Bilibili
         script(type='module')
             include includes/script.js
     //      #background

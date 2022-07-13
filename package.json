@@ -5,7 +5,9 @@
     "start": "parcel",
     "build": "parcel build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.1",
     "@parcel/transformer-pug": "^2.0.1",
