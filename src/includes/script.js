@@ -3,9 +3,9 @@
 console.info("Welcome to the pub!")
 console.info("Check out TXT record of tg.lug.pub")
 
-globalThis.trans = () => {
+globalThis.feelLucky = () => {
   document.getElementById("logo").src = new URL('./assets/images/lug-pub-logo-alt.svg', import.meta.url);
-  return '🏳️‍⚧️'
+  return '🎲'
 }
 
 navigator.serviceWorker.register(
