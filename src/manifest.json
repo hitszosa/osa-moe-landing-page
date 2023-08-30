@@ -4,9 +4,9 @@
   "display": "minimal-ui",
   "scope": "/",
   "start_url": "/",
-  "name": "HITSZ LUG Pub",
-  "short_name": "LUG Pub",
-  "description": "Welcome to LUG Pub, the landing page for HITSZ Linux User Group and more.",
+  "name": "HITSZ OSA",
+  "short_name": "OSA",
+  "description": "Welcome to OSA.moe, the landing page for HITSZ Linux User Group and more.",
   "icons": [
     {
         "src": "./assets/icons/maskable_icon_x48.png",
