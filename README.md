@@ -1,8 +1,8 @@
-# LUG Pub - Landing Page
+# HITSZ OSA - Landing Page
 
 ## Website
 
-[lug.pub](https://www.lug.pub)
+[osa.moe](https://www.osa.moe)
 
 ## Development Guide
 
