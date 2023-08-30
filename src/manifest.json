@@ -6,7 +6,7 @@
   "start_url": "/",
   "name": "HITSZ OSA",
   "short_name": "OSA",
-  "description": "Welcome to OSA.moe, the landing page for HITSZ Linux User Group and more.",
+  "description": "Welcome to OSA.moe, the landing page for HITSZ OSA and more.",
   "icons": [
     {
         "src": "./assets/icons/maskable_icon_x48.png",
