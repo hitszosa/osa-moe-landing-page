@@ -35,7 +35,7 @@ footer {
     text-align: center;
     font-size: 0.76em;
     color: var(--color-dimmed-grey);
-    margin-bottom: 0;
+    padding-bottom: 4em;
 }
 
 
