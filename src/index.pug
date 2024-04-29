@@ -3,11 +3,15 @@ html(lang='zh')
     include includes/head.pug
     include includes/widgets.pug
     body(style="font-family: Ubuntu, 'Noto Sans SC', Arial, Helvetica, sans-serif; background-color: #ffffff; margin: 0;")
-    include includes/style.pug
         .body-wrapper
             .content
-                a.logo-wrapper(href='https://www.osa.moe/' aria-label='HITSZ OSA Homepage')
-                    img#logo(src='assets/images/lug-pub-logo.svg' height='224' width='224' alt='OSA penguin holding a beer')
+                .logo-view
+                    button ⏴
+                    a.logo-wrapper(href='https://www.osa.moe/' aria-label='HITSZ OSA Homepage')
+                        img.primary#logo(src='assets/images/lug-pub-logo.svg' height='224' width='224' alt='OSA penguin holding a beer')
+                        img#logo(src='assets/images/lug-pub-logo-alt.svg' height='224' width='224' alt='Abstract OSA penguin on a shell')
+                        img#logo(src='assets/images/lug-pub-logo-vtuber.svg' height='224' alt='HITSZ OSA in VTuber logo style')
+                    button ⏵
                 h1.heading
                     | HITSZ 开源技术协会
                 h2.section-heading
