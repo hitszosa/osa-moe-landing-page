@@ -7,7 +7,7 @@ navigator.serviceWorker.register(
   new URL('./sw.js', import.meta.url), { type: 'module' })
 
 let logoIndex = 0
-const $logos = document.querySelectorAll('img#logo')
+const $logos = document.querySelectorAll('img.logo')
 const [$prevButton, $nextButton] = document.querySelectorAll('.logo-view > button')
 
 const updateLogos = () => {

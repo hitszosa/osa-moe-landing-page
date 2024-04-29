@@ -25,10 +25,9 @@ h3 {
 }
 
 a.logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 16em;
+    display: grid;
+    grid-template-columns: 224px;
+    grid-template-rows: 224px;
 }
 
 footer {
@@ -92,21 +91,23 @@ div.container {
     font-size: 1em;
 }
 
-img#logo {
+img.logo {
     will-change: transform;
-    transition: var(--unified-transition);
-    height: 224px;
-    display: none;
-    filter: var(--shadow-lg-base);
+    transition: all .8s ease-in-out;
+    grid-area: 1 / 1;
+    opacity: 0;
+    filter: var(--shadow-lg-base) blur(15px) contrast(3);
 }
 
-img#logo:hover {
+img.primary.logo {
+    opacity: 100%;
+    filter: var(--shadow-lg-base);
+    z-index: 2;
+}
+
+img.logo.primary:hover {
     transform: rotate(8deg);
     filter: var(--shadow-lg-focus);
-}
-
-img.primary#logo {
-    display: block;
 }
 
 div.link-box {
@@ -149,6 +150,7 @@ hr.divider-dotted:hover {
 
 div.body-wrapper {
     position: relative;
+    height: 224px;
 }
 
 div.content {
@@ -166,7 +168,7 @@ div#background {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: -1;
 }
 
 .logo-view {
