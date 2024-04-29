@@ -145,7 +145,7 @@ hr.divider-dotted {
 }
 
 hr.divider-dotted:hover {
-    border-top: 2px dotted var(--color-beer-yello);
+    border-top: 2px dotted var(--color-beer-yellow);
 }
 
 div.body-wrapper {
