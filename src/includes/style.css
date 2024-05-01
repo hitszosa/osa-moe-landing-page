@@ -189,6 +189,10 @@ div#background {
     transition: var(--unified-transition);
 }
 
+.logo-view button.visible {
+    opacity: 100%;
+}
+
 .logo-view button:hover {
     cursor: pointer;
 }
