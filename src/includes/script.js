@@ -29,13 +29,3 @@ $nextButton.addEventListener('click', (_) => {
   logoIndex = (logoIndex + 1) % $logos.length
   updateLogos();
 })
-
-document.addEventListener('pointerenter', (ev) => {
-  if (ev.pointerType === 'mouse') {
-    $prevButton.classList.remove('visible')
-    $nextButton.classList.remove('visible')
-  } else {
-    $prevButton.classList.add('visible')
-    $nextButton.classList.add('visible')
-  }
-})
