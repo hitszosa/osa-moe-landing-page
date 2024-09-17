@@ -16,7 +16,7 @@
 1. Use command `yarn` to install all required Node modules.
 2. You're up!
 
-*Recommand IDE: WebStorm*
+*Recommended IDE: WebStorm*
 
 ### Deploy
 
