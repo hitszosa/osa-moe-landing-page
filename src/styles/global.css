@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@config "@hitszosa/ui/tailwind/preset";
+@source "../../node_modules/@hitszosa/ui/dist/components";
+@import "@hitszosa/ui/styles/theme.css";
+
+:root {
+  font-smooth: subpixel-antialiased;
+}
+
+.ui-sans {
+  font-family: var(
+    --ui-font-sans,
+    "Noto Sans SC",
+    "Noto Sans",
+    "PingFang SC",
+    "Microsoft YaHei",
+    sans-serif
+  );
+}
+
+.ui-latin {
+  font-family: var(--ui-font-latin, "Ubuntu", "Noto Sans", sans-serif);
+}
+
+.ui-mono {
+  font-family: var(
+    --ui-font-mono,
+    "JetBrains Mono",
+    "Cascadia Code",
+    "SFMono-Regular",
+    "Noto Sans Mono CJK SC",
+    "Sarasa Mono SC",
+    monospace
+  );
+}
